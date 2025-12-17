@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deanna Allen for Mayor | More for Milton</title>
+    <style>
+        /* THE "SMALL TOWN OFFICIAL" STYLESHEET */
+        :root {
+            --milton-blue: #1e3a5f; 
+            --milton-red: #a32222;  
+            --off-white: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-top: 10px solid var(--milton-blue);
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: var(--milton-blue);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--off-white);
+            border-bottom: 2px solid var(--milton-red);
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 10px 0;
+            color: var(--milton-blue);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero h2 {
+            font-size: 1.2em;
+            color: var(--milton-red);
+            font-family: Arial, sans-serif;
+            margin-top: 0;
+        }
+
+        .campaign-poster {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin-top: 20px;
+        }
+
+        /* VIDEO CONTAINER */
+        .video-wrapper {
+            max-width: 700px;
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            background: #000;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* CONTENT SECTIONS */
+        .section {
+            padding: 40px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .section h3 {
+            color: var(--milton-blue);
+            font-size: 1.8em;
+            border-bottom: 2px solid var(--milton-red);
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* FUN FACTS GRID */
+        .facts-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        
+        @media (min-width: 600px) {
+            .facts-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .fact-card {
+            background: #f1f1f1;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .fact-card h4 {
+            color: var(--milton-red);
+            margin-top: 0;
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+
+        /* FOREIGN POLICY / DUEL SECTION */
+        .duel-box {
+            border: 2px dashed var(--milton-red);
+            background-color: #fff0f0;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .platform-list li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        /* MILTON MAN ADVERTISEMENT BOX */
+        .milton-man-promo {
+            background-color: #333;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .milton-man-promo h4 {
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .milton-man-promo p {
+            font-style: italic;
+            color: #ccc;
+        }
+
+        /* BUTTONS */
+        .btn {
+            display: inline-block;
+            background-color: var(--milton-red);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #801b1b;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #222;
+            color: #888;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About Deanna</a>
+        <a href="#facts">Facts</a>
+        <a href="#foreign-policy">Foreign Policy</a>
+        <a href="#milton-man">Milton Man™</a>
+    </nav>
+
+    <div class="hero">
+        <img src="Vote_Deanna_Allen.png" alt="Vote Deanna Allen" class="campaign-poster">
+        
+        <h1>More For Milton</h1>
+        <h2>Leadership. Community. Future. (And Gravel.)</h2>
+        
+        <button class="btn" onclick="alert('Thank you for your support! Please continue to be nice to everyone.')">Join the Movement</button>
+
+        <div class="video-wrapper">
+            <h3 style="color: var(--milton-blue); margin-bottom: 10px;">WATCH: The Official Campaign Ad</h3>
+            
+            <div class="video-container">
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/WXchBi0n6nA"" 
+                    title="Campaign Video" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        </div>
+
+    <div class="section" id="about">
+        <h3>A Daughter of Milton</h3>
+        <p>Deanna Allen isn
